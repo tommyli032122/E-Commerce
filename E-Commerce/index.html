@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive E-commerce Website</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- BOX icon -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Swiper -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!--// Navbar //-->
+    <header>
+        <a href="#" class="logo"><i class='bx bxs-t-shirt'></i>Logo</a>
+
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#new-arrival">New Arrival</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+
+        <!-- Icons -->
+        <div class="header-icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-search' id="search-icon"></i>
+            <i class='bx bx-cart-alt' id="cart-icon"><span class="total-cart-items">0</span></i>
+            <i class='bx bx-user' id="user-icon"></i>
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="text" name="" id="search-input" placeholder="Search Here...">
+        </div>
+
+        <!-- Cart box -->
+        <div class="cart">
+            <h3>Your cart</h3>
+            <div class="cart-items">
+                <!-- Box1 -->
+                <!-- <div class="cart-item">
+                    <img src="img/pic1.png" alt="">
+                    <div class="cart-item-text">
+                        <h3 class="cart-item-title">Shirt-1</h3>
+                        <span class="cart-item-price">$50</span>
+                        <input class="item-quantity" type="number" value="1" min="1" max="100" name="" id="">
+                    </div>    
+                    <i class='bx bxs-trash-alt delete-btn'></i>
+                </div> -->
+                <!-- Box2 -->
+                <!-- <div class="cart-item">
+                    <img src="img/pic2.png" alt="">
+                    <div class="cart-item-text">
+                        <h3 class="cart-item-title">Shirt-2</h3>
+                        <span class="cart-item-price">$50</span>
+                        <input class="item-quantity" type="number" value="1" min="1" max="100" name="" id="">
+                    </div>
+                    <i class='bx bxs-trash-alt delete-btn'></i>
+                </div> -->
+            </div>
+            <h2>Total: $<span class="cart-total-price">0</span></h2>
+            <button type="button" class="purchase-btn">PURCHASE</button>
+        </div>
+
+        <!-- User -->
+        <div class="user">
+            <h2>Login now</h2>
+            <input type="email" placeholder="Your E-mail">
+            <input type="password" name="" id="password" placeholder="Password">
+            <input type="submit" value="Login" class="login-btn">
+            <p>Forget Password <a href="#">Reset now</a></p>
+            <p>Don't have account <a href="#">Creat One</a></p>
+        </div>
+    </header>
+
+    <!--// Slider //-->
+    <section class="swiper-container">
+        <!-- Slider main container -->
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <a href="#" class="swiper-slide"><img src="/img/slider1.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="/img/slider2.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="/img/slider3.png" alt=""></a>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- New Arrival -->
+    <section id="new-arrival">
+        <h2 class="new-arrival-title">New-arrival</h2>
+        <div class="new-arrival-container">
+            <a href="#">
+                <div class="arrival-box">
+                    <img src="/img/newArrival1.png" class="arrival-img">
+                    <div class="arrival-content">
+                        <a href="#">Shop now</a>
+                    </div>                   
+                </div>
+            </a>
+            <a href="#">
+                <div class="arrival-box">
+                    <img src="/img/newArrival2.png" class="arrival-img">
+                    <div class="arrival-content">
+                        <a href="#">Shop now</a>
+                    </div>                   
+                </div>
+            </a>
+            <a href="#">
+                <div class="arrival-box">
+                    <img src="/img/newArrival3.png" class="arrival-img">
+                    <div class="arrival-content">
+                        <a href="#">Shop now</a>
+                    </div>                   
+                </div>
+            </a>
+            <a href="#">
+                <div class="arrival-box">
+                    <img src="/img/newArrival1.png" class="arrival-img">
+                    <div class="arrival-content">
+                        <a href="#">Shop now</a>
+                    </div>                   
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!--// Shop Products //-->
+    <section id="products">
+        <div class="shop-container">
+            <h2 class="shop-title">Shop products</h2>
+
+            <!-- shop-items -->
+            <div class="shop-items">
+                <!--Box1-->
+                <div class="shop-item">
+                    <img class="shop-item-image" src="/img/pic1.png"></img>
+                    <div class="shop-item-text">
+                        <h3 class="shop-item-title">Shirt-1</h3>
+                        <span class="shop-item-price">$100</span>
+                    </div>        
+                    <i class='bx bx-cart-alt add-btn'></i>
+                </div>
+                <!--Box2-->
+                <div class="shop-item">
+                    <img class="shop-item-image" src="/img/pic2.png"></img>
+                    <div class="shop-item-text">
+                        <h3 class="shop-item-title">Shirt-2</h3>
+                        <span class="shop-item-price">$100</span>
+                    </div>                    
+                    <i class='bx bx-cart-alt add-btn'></i>
+                </div>
+                <!--Box3-->
+                <div class="shop-item">
+                    <img class="shop-item-image" src="/img/pic3.png"></img>
+                    <div class="shop-item-text">
+                        <h3 class="shop-item-title">Shirt-3</h3>
+                        <span class="shop-item-price">$100</span>
+                    </div>                    
+                    <i class='bx bx-cart-alt add-btn'></i>
+                </div>
+                <!--Box4-->
+                <div class="shop-item">
+                    <img class="shop-item-image" src="/img/pic4.png"></img>
+                    <div class="shop-item-text">
+                        <h3 class="shop-item-title">Shirt-4</h3>
+                        <span class="shop-item-price">$100</span>
+                    </div>                    
+                    <i class='bx bx-cart-alt add-btn'></i>
+                </div>
+                <!--Box5-->
+                <div class="shop-item">
+                    <img class="shop-item-image" src="/img/pic5.png"></img>
+                    <div class="shop-item-text">
+                        <h3 class="shop-item-title">Pants-5</h3>
+                        <span class="shop-item-price">$100</span>
+                    </div>                   
+                    <i class='bx bx-cart-alt add-btn'></i>
+                </div>
+                <!--Box6-->
+                <div class="shop-item">
+                    <img class="shop-item-image" src="/img/pic6.png"></img>
+                    <div class="shop-item-text">
+                        <h3 class="shop-item-title">Pants-6</h3>
+                        <span class="shop-item-price">$100</span>
+                    </div>                    
+                    <i class='bx bx-cart-alt add-btn'></i>
+                </div>
+                <!--Box7-->
+                <div class="shop-item">
+                    <img class="shop-item-image" src="/img/pic7.png"></img>
+                    <div class="shop-item-text">
+                        <h3 class="shop-item-title">Pants-7</h3>
+                        <span class="shop-item-price">$100</span>
+                    </div>                    
+                    <i class='bx bx-cart-alt add-btn'></i>
+                </div>
+                <!--Box8-->
+                <div class="shop-item">
+                    <img class="shop-item-image" src="/img/pic8.png"></img>
+                    <div class="shop-item-text">
+                        <h3 class="shop-item-title">Coat-8</h3>
+                        <span class="shop-item-price">$100</span>
+                    </div>                   
+                    <i class='bx bx-cart-alt add-btn'></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--// Reviews //-->
+    <section id="reviews">
+        <div class="reviews-title">
+            <h2>Our<span>Customer's</span></h2>
+        </div>
+        <div class="reviews-container">
+            <div class="review-box">
+                <img src="/img/person1.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor augue, feugiat a feugiat sit amet, tempor eget sem. Maecenas ut elementum metus, non volutpat quam.</p>
+                <h2>Leanne Graham</h2>
+            </div>
+            <div class="review-box">
+                <img src="/img/person2.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor augue, feugiat a feugiat sit amet, tempor eget sem. Maecenas ut elementum metus, non volutpat quam.</p>
+                <h2>Ervin Howell</h2>
+            </div>
+            <div class="review-box">
+                <img src="/img/person3.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor augue, feugiat a feugiat sit amet, tempor eget sem. Maecenas ut elementum metus, non volutpat quam.</p>
+                <h2>Clementine Bauch</h2>
+            </div>
+        </div>
+    </section>
+
+    <!--//  Footer  //-->
+    <section class="footer">
+        <div class="footer-box">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel orci augue. Nam lorem nulla, suscipit vel nibh ut, sodales sollicitudin mauris.</p>
+
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-tiktok'></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h2>Support</h2>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">FAQ</a></li>
+        </div>
+        <div class="footer-box">
+            <h2>Our Branches</h2>
+            <li><a href="#">US</a></li>
+            <li><a href="#">Canada</a></li>
+            <li><a href="#">Italy</a></li>
+            <li><a href="#">France</a></li>
+            <li><a href="#">Japan</a></li>
+        </div>
+        <div class="footer-box">
+            <h2>Pament Method</h2>
+            <div class="payment">
+                <a href="#"><img src="/img/Visa.png" alt=""></a>
+                <a href="#"><img src="/img/mastercard.png" alt=""></a>
+                <a href="#"><img src="/img/paypal.png" alt=""></a>
+            </div>               
+        </div>
+    </section>
+    <!--// Copyright //-->
+    <div class="copyright">
+        <p>&#169; Logo All Right Reserved</p>
+    </div>
+
+    <!-- Link To JS -->
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+    <script src="test.js"></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+        
+            // If we need pagination
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+        
+            // Navigation arrows
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
