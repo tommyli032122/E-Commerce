@@ -1,10 +1,16 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "a",
+      "title": "Shirt-1",
+      "price": "$100",
       "quantity": "1",
-      "price": "1"
+      "id": 1
+    },
+    {
+      "title": "Shirt-2",
+      "price": "$100",
+      "quantity": "7",
+      "id": 2
     }
   ]
 }

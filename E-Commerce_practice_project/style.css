@@ -44,15 +44,11 @@ section {
 }
 /* ==========Swiper========== */
 .swiper-container {
-    display: flex;
+    width: auto;
     align-items: center;
     justify-content: center;
     margin-top: 0rem;
     z-index: 1;
-}
-.swiper {
-    width: 80%;
-    height: fit-content;
 }
 .swiper img {
     width: 100%;
@@ -116,6 +112,10 @@ header {
 }
 #menu-icon {
     display: none;
+}
+#menu-icon:hover {
+    color: var(--main-color);
+    transition: 0.2s;
 }
 #search-icon:hover {
     color: var(--main-color);
@@ -296,9 +296,10 @@ header {
     margin: 36px 0;
 }
 .new-arrival-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 240px);
+    gap: 20px;
     justify-content: center;
-    gap: 1rem;
     height: fit-content;
 }
 .arrival-box {
@@ -339,7 +340,7 @@ header {
 }
 .shop-items {
     display: grid;
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: repeat(auto-fit, 250px);
     justify-content: center;
     gap: 1.5rem;
 }
@@ -366,7 +367,7 @@ header {
 /* ////////// Reviews ////////// */
 .reviews-container {
     display: grid;
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(auto-fit, 250px);
     justify-content: center;
     gap: 3rem;
     margin-top: 2rem;
@@ -419,7 +420,7 @@ header {
 /* ////////// Footer ////////// */
 .footer {
     display: grid;
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: repeat(auto-fit, 250px);
     justify-content: center;
     gap: 1.5rem;
 }
@@ -469,4 +470,47 @@ header {
     padding: 30px;
     text-align: center;
     color: var(--text-color);
+}
+/* ////////// RWD ////////// */
+@media (max-width: 1058px) {
+    header {
+        padding: 18px 60px;
+    }
+    section {
+        padding: 50px 60px;
+    }
+}
+@media (max-width: 991px) {
+    header {
+        padding: 18px 4%;
+    }
+    section {
+        padding: 50px 60px;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        padding: 12px 4%;
+    }
+    #menu-icon {
+        display: initial;
+    }
+    header .navbar {
+        position: absolute;
+        width: 240px;
+        height: 100vh;
+        top: 100%;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        row-gap: 1.4rem;
+        padding: 20px;
+        box-shadow: 4px 4px 0 4px rgb(14 55 54 / 15%);
+        transition: 0.2 linear;
+        text-align: left;
+    }
+    .navbar.active {
+        right: 0;
+    }
 }
